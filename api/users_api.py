@@ -24,12 +24,12 @@ class UsersApi:
         return HandledResponse(response, 200)
 
     @staticmethod
-    def delete_user(token: str) -> HandledResponse:
+    def delete_user(payload: dict) -> HandledResponse:
         """Отправляет DELETE-запрос на удаление залогиненного пользователя"""
 
-        response = requests.delete(ApiEndpoints.user)
+        response = requests.delete(ApiEndpoints.user, headers=payload)
 
-        return HandledResponse(response, 200)
+        return HandledResponse(response, 202)
 
     @staticmethod
     def login_user(payload: dict) -> HandledResponse:
