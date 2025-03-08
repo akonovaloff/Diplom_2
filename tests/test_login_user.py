@@ -1,15 +1,24 @@
 import pytest
-from utils.config import ApiEndpoints
 from api.users_api import UsersApi
-from utils.helpers import existing_user_data
+from utils.helpers import existing_user_data, new_user_data
 
-BASE_URL = ApiEndpoints.login
-
+# Подготовка тестовых данных
 existing_user = existing_user_data()
+new_user = new_user_data()
+not_valid_pass = {"email": existing_user["email"], "password": new_user["password"]}
+no_pass_user = {key: value for key, value in new_user.items() if key != "password"}
+
 
 class TestLoginExistingUser:
     @pytest.mark.parametrize("payload, expected_status, expected_message", [
-        (existing_user, 200, '"success":true')
+        # Существующий пользователь
+        (existing_user, 200, '"success":true'),
+        # Новый пользователь
+        (new_user, 401, "email or password are incorrect"),
+        # Валидный email, не валидный пароль
+        (not_valid_pass, 401, "email or password are incorrect"),
+        # Отсутствует поле password
+        (no_pass_user, 401, "email or password are incorrect")
     ])
     def test_login_existing_user(self, payload, expected_status, expected_message):
         response = UsersApi.login_user(payload)
