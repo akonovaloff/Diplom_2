@@ -11,7 +11,7 @@ class HandledResponse:
         print(self)
 
     def __repr__(self):
-        return f"\n{inspect.currentframe().f_back.f_back.f_code.co_name}:(success={self.success}, status_code={self.status_code}, data={self.data})"
+        return f"{inspect.currentframe().f_back.f_back.f_code.co_name}:(success={self.success}, status_code={self.status_code}, data={self.data})"
 
 
 class UsersApi:
@@ -24,10 +24,11 @@ class UsersApi:
         return HandledResponse(response, 200)
 
     @staticmethod
-    def delete_user(payload: dict) -> HandledResponse:
-        """Отправляет DELETE-запрос на удаление залогиненного пользователя"""
+    def delete_user(access_token: str) -> HandledResponse:
+        """Отправляет DELETE-запрос на удаление пользователя по его accessToken"""
 
-        response = requests.delete(ApiEndpoints.user, headers=payload)
+        headers = {"Authorization": access_token}
+        response = requests.delete(ApiEndpoints.user, headers=headers)
 
         return HandledResponse(response, 202)
 
