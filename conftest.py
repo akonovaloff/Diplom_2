@@ -1,6 +1,7 @@
 import pytest
 from faker import Faker
 from api.users_api import UsersApi
+from utils.helpers import StellarBurgerUser
 
 fake = Faker("en-US")
 
@@ -42,9 +43,33 @@ def not_valid_pass_user(existing_user):
 def no_password_user(existing_user):
     user = {key: value for key, value in existing_user.items() if key != "password"}
     return user
-#
-# @pytest.fixture()
-# def not_valid_email_user_data(existing_user_data):
-#     user = {key: value for key, value in existing_user_data.items() if key != "email"}
-#     user["email"] = fake.ascii_email()
-#     return user
+
+@pytest.fixture
+def generate_new_user():
+    def new_user_data():
+        return {"email": fake.ascii_email(), "password": fake.password(8), "name": "TestUser"}
+
+    return new_user_data
+
+@pytest.fixture()
+def new_stellar_burger_user():
+    print("Создание пользователя")
+    user = StellarBurgerUser()
+    print("Регистрация пользователя")
+    user.registration()
+    yield user
+
+    print("\nУдаление пользователя")
+    user.__del__()
+
+@pytest.fixture()
+def logout_stellar_burger_user(new_stellar_burger_user):
+    print("Выход из системы")
+    new_stellar_burger_user.logout()
+    return new_stellar_burger_user
+
+@pytest.fixture()
+def login_stellar_burger_user(new_stellar_burger_user):
+    print("Вход в систему")
+    new_stellar_burger_user.login()
+    return new_stellar_burger_user

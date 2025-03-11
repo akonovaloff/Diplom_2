@@ -19,13 +19,13 @@ class TestUserRegistration:
             f"\nТекст ответа сервера не содержит ожидаемую часть '{expected_message}'"
             f"\nОтвет сервера: {response.text}")
 
-    def test_new_user_registration(self, new_user):
+    def test_new_user_registration_new_user(self, new_user):
         self.user_registration(new_user, 200, '"success":true')
 
     @pytest.mark.parametrize("field_to_remove", ["email", "password", "name"])
-    def test_registration_without_required_field(self, existing_user, field_to_remove):
+    def test_user_registration_existing_user_without_required_field(self, existing_user, field_to_remove):
         no_required_field_user = {key: value for key, value in existing_user.items() if key != field_to_remove}
         self.user_registration(no_required_field_user, 403, "Email, password and name are required fields")
 
-    def test_registration_existing_user(self, existing_user):
+    def test_user_registration_existing_user(self, existing_user):
         self.user_registration(existing_user, 403, "User already exists")

@@ -2,29 +2,31 @@ import requests
 from utils.config import ApiEndpoints
 import inspect
 
+
 class HandledResponse:
     def __init__(self, response: requests.Response, success_code: int):
         self.success = response.status_code == success_code
         self.status_code = response.status_code
         self.data = response.json()
         self.text = response.text
+        self.__caller = inspect.currentframe().f_back.f_back.f_code.co_name
         print(self)
 
     def __repr__(self):
-        return f"{inspect.currentframe().f_back.f_back.f_code.co_name}:(success={self.success}, status_code={self.status_code}, data={self.data})"
+        return f"{self.__caller}:(success={self.success}, status_code={self.status_code}, data={self.data})"
 
 
 class UsersApi:
-    @staticmethod
-    def register_user(payload: dict) -> HandledResponse:
+    @classmethod
+    def register_user(cls, payload: dict) -> HandledResponse:
         """Отправляет POST-запрос на регистрацию пользователя"""
 
         response = requests.post(ApiEndpoints.register, json=payload)
 
         return HandledResponse(response, 200)
 
-    @staticmethod
-    def delete_user(access_token: str) -> HandledResponse:
+    @classmethod
+    def delete_user(cls, access_token: str) -> HandledResponse:
         """Отправляет DELETE-запрос на удаление пользователя по его accessToken"""
 
         headers = {"Authorization": access_token}
@@ -32,10 +34,28 @@ class UsersApi:
 
         return HandledResponse(response, 202)
 
-    @staticmethod
-    def login_user(payload: dict) -> HandledResponse:
+    @classmethod
+    def login_user(cls, payload: dict) -> HandledResponse:
         """Отправляет POST-запрос, чтобы залогинить пользователя в системе"""
 
         response = requests.post(ApiEndpoints.login, json=payload)
 
+        return HandledResponse(response, 200)
+
+    @classmethod
+    def logout_user(cls, refresh_token: str) -> HandledResponse:
+        payload = {"token": refresh_token}
+        response = requests.post(ApiEndpoints.logout, json=payload)
+        return HandledResponse(response, 200)
+
+    @classmethod
+    def get_user_info(cls, access_token: str):
+        headers = {"Authorization": access_token}
+        response = requests.get(ApiEndpoints.user, headers=headers)
+        return HandledResponse(response, 200)
+
+    @classmethod
+    def patch_user_info(cls, access_token: str, payload: dict):
+        headers = {"Authorization": access_token}
+        response = requests.patch(ApiEndpoints.user, headers=headers, json=payload)
         return HandledResponse(response, 200)
