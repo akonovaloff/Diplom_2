@@ -1,5 +1,5 @@
 import pytest
-from api.users_api import UsersApi
+from api.stellar_burger_api import StellarBurgerApi
 from conftest import new_user, existing_user, not_valid_pass_user, no_password_user
 
 
@@ -9,7 +9,7 @@ class TestLoginUser:
     def login_user(cls, payload, expected_status, expected_message):
         """Отправляет запрос на вход с разными данными пользователя и проверяет ответ сервера
         """
-        response = UsersApi.login_user(payload)
+        response = StellarBurgerApi.login_user(payload)
         assert response.status_code == expected_status, "\nКод ответа сервера не соответствует ожидаемому"
         assert expected_message in response.text, (
             f"\nТекст ответа сервера не содержит ожидаемую часть '{expected_message}'"

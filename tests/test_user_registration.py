@@ -1,5 +1,5 @@
 import pytest
-from api.users_api import UsersApi
+from api.stellar_burger_api import StellarBurgerApi
 from conftest import new_user, existing_user
 
 
@@ -13,7 +13,7 @@ class TestUserRegistration:
         :param expected_message: ожидаемая подстрока, которая должна содержаться в ответе сервера
         :return:
         """
-        response = UsersApi.register_user(payload)
+        response = StellarBurgerApi.register_user(payload)
         assert response.status_code == expected_status, "\nКод ответа сервера не соответствует ожидаемому"
         assert expected_message in response.text, (
             f"\nТекст ответа сервера не содержит ожидаемую часть '{expected_message}'"

@@ -1,15 +1,12 @@
-from pickletools import read_float8
-
 from faker import Faker
-from api.users_api import UsersApi as Api
-
-fake = Faker("en-US")
+from api.stellar_burger_api import StellarBurgerApi as Api
 
 
 class StellarBurgerUser:
+    fake = Faker("en-US")
+    api = Api
 
     def __init__(self):
-        self.api = Api
 
         self.email: str = ""
         self.password: str = ""
@@ -36,13 +33,13 @@ class StellarBurgerUser:
         return f"StellarBurgerUser: {self.payload.full}"
 
     def generate_email(self):
-        self.email = fake.ascii_email()
+        self.email = self.fake.ascii_email()
 
     def generate_password(self):
-        self.password = fake.password(8)
+        self.password = self.fake.password(8)
 
     def generate_name(self):
-        self.name = fake.first_name()
+        self.name = self.fake.first_name()
 
     @property
     def payload(self):
@@ -135,4 +132,3 @@ class StellarBurgerUser:
     def logout(self):
         response = self.api.logout_user(refresh_token=self.__refresh_token)
         return response
-

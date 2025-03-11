@@ -3,3 +3,5 @@
 **/__pycache__
 .coverage
 main.py
+**/allure-results
+pytest.ini

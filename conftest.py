@@ -1,6 +1,6 @@
 import pytest
 from faker import Faker
-from api.users_api import UsersApi
+from api.stellar_burger_api import StellarBurgerApi
 from utils.helpers import StellarBurgerUser
 
 fake = Faker("en-US")
@@ -14,9 +14,9 @@ def new_user():
     print("Данные пользователя сгенерированы")
     yield user
 
-    response = UsersApi.login_user(user)
+    response = StellarBurgerApi.login_user(user)
     if response.success:
-        _ = UsersApi.delete_user(response.data["accessToken"])
+        _ = StellarBurgerApi.delete_user(response.data["accessToken"])
         print("Пользователь удалён")
     else:
         print("Пользователь отсутствует в базе")
@@ -27,7 +27,7 @@ def existing_user(new_user):
     """Генерация и регистрация нового пользователя"""
 
     user = new_user
-    response = UsersApi.register_user(user)
+    response = StellarBurgerApi.register_user(user)
     assert response.success, "\nUser must be successfully registered "
     print("Пользователь зарегистрирован")
     return user
@@ -73,3 +73,7 @@ def login_stellar_burger_user(new_stellar_burger_user):
     print("Вход в систему")
     new_stellar_burger_user.login()
     return new_stellar_burger_user
+
+@pytest.fixture(scope="session")
+def ingredients():
+    return StellarBurgerApi.get_available_ingredients().data["data"]
