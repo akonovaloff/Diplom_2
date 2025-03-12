@@ -1,0 +1,11 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'bobbymontes@carrillo.com', 'password': ')5MQ4pll', 'name': 'TestUser'}
+Регистрация пользователя
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'bobbymontes@carrillo.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEzYyIsImlhdCI6MTc0MTc4ODc5MywiZXhwIjoxNzQxNzg5OTkzfQ.0EKl0oshARBSZV_Xi7rXyT91rlwR9bO9dPX10ujIt4w', 'refreshToken': 'ee11aa8d4cd196862f62845804dc1aee024eabdf04ad3ae099787b2c2bdf729824c35c84df0ebbaa'})
+Выход из системы
+logout:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+update_info:(success=True, status_code=200, data={'success': True, 'user': {'email': 'bobbymontes@carrillo.com', 'name': 'TestUser'}})
+StellarBurgerUser: {'email': 'bobbymontes@carrillo.com', 'password': '+L7U2+oo', 'name': 'TestUser'}
+
+Удаление пользователя
+__del__:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

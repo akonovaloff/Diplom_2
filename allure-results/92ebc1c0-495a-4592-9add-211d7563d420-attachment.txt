@@ -1,0 +1,10 @@
+StellarBurgerUser: {'email': 'msmith@gmail.com', 'password': 'M!zV1UVq', 'name': 'TestUser'}
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'msmith@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjEwMiIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.KzuOd_9uSutWsI7GOPON4_FsocDQ9atZ0tvNOTtNmTk', 'refreshToken': '16b56b33a9ffe269413cfc98823d9ea7d1771b553967f637135f83d1ad7d66832ded4623dd090736'})
+StellarBurgerUser: {'email': 'perrylisa@daniels-blair.org', 'password': '2FK!7dWg', 'name': 'TestUser'}
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'perrylisa@daniels-blair.org', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc3OWVkMjgwMDAxYjU5NjExNiIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.aMtXFrL2k936yNHv_litUQMMZ3JZglVHLBxUw3iczBU', 'refreshToken': '80c9a2016f3ff8e0e6d5cb9eb578a28a7522e66b75fc494f94d09ee3e2449347eb1782828e0af6ff'})
+logout:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+StellarBurgerUser: {'email': 'gregory38@brown-hughes.net', 'password': 'j^@$1Xpu', 'name': 'TestUser'}
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'gregory38@brown-hughes.net', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEyOCIsImlhdCI6MTc0MTc4ODc5MywiZXhwIjoxNzQxNzg5OTkzfQ.zhR7VKUK3d76nI15ryabnIX6sP4aNkw4tBqdpgPHFh4', 'refreshToken': '5f7b6acd8a421bd244377e2af21efce190ecda66fa06d4764278367dc725516839b885cb0b023ad3'})
+pytest_pyfunc_call:(success=True, status_code=400, data={'success': False, 'message': 'Ingredient ids must be provided'})
+__del__:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+__del__:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

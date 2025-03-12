@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'randolphrobert@yahoo.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEzOCIsImlhdCI6MTc0MTc4ODc5MywiZXhwIjoxNzQxNzg5OTkzfQ.uP0fAc1aHB3ZuIgcere7pEGRGvTuZ8XFadh2ze4vqsM', 'refreshToken': 'fcad4b0ddb5d04032252a30005ed8370b911edf63ba0184c991db30f8ca77e264e09317b3413a520'})
+Пользователь зарегистрирован
+user_registration:(success=False, status_code=403, data={'success': False, 'message': 'Email, password and name are required fields'})
+new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEzOCIsImlhdCI6MTc0MTc4ODc5NCwiZXhwIjoxNzQxNzg5OTk0fQ.s-BqLiZIr5bWHHWI8MQH3aKRgxMvAc4CmHIK8r-NI24', 'refreshToken': '77d89ddecc6e87af9ccf61f73b0b1215b7a907761a3e9005c7fa3a6b59f2be3dab3efc8a2d163a8d', 'user': {'email': 'randolphrobert@yahoo.com', 'name': 'TestUser'}})
+new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

@@ -1,0 +1,5 @@
+Данные пользователя сгенерированы
+user_registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'hendersonpriscilla@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEzYSIsImlhdCI6MTc0MTc4ODc5MywiZXhwIjoxNzQxNzg5OTkzfQ.9Zu_0ujPJYFe7ksGb8h67cMkVDb66xBFWQTyRBUGZcs', 'refreshToken': 'a4a166c65284a967800f1fda19a87d2bc8b450e2a8d100720241fbb192c2f6db159b40e0d159e29b'})
+new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEzYSIsImlhdCI6MTc0MTc4ODc5MywiZXhwIjoxNzQxNzg5OTkzfQ.9Zu_0ujPJYFe7ksGb8h67cMkVDb66xBFWQTyRBUGZcs', 'refreshToken': '49d3f4e9a379047008d0c390d29b2b404106deb96df72ad184d36dc7dd0cdbd82d9943dac1195a41', 'user': {'email': 'hendersonpriscilla@gmail.com', 'name': 'TestUser'}})
+new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

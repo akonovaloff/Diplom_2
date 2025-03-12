@@ -1,0 +1,6 @@
+Данные пользователя сгенерированы
+existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'maria88@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjEwMCIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.a13RitIlq1YvBNK05tudPf62C1ODMYsTH_5G-EWD9f4', 'refreshToken': '243193e357f98f66af18a9b5047cb60022fcd5e23ce749577f15c5285d522bb29896fd9b375f7fc3'})
+Пользователь зарегистрирован
+new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjEwMCIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.g5LNofoJB8Cshbs1qhyXWJxIYIvPepaONW0c-pNgQEY', 'refreshToken': 'bd8f238cddee88b9884881469074de7368efc63e1c1c12be5da79f8a04b5c9c0cd25e3fc3a0d21ba', 'user': {'email': 'maria88@gmail.com', 'name': 'TestUser'}})
+new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

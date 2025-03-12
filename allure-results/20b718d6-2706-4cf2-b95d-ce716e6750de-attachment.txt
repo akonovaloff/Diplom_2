@@ -1,0 +1,10 @@
+StellarBurgerUser: {'email': 'moorenicole@yahoo.com', 'password': 'Q^*x8V2k', 'name': 'TestUser'}
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'moorenicole@yahoo.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjEwNSIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.GXqgus1liEHlx-UjFsk4l_dzRiWODbMcvW9_PkCurKc', 'refreshToken': 'a65c04e03254888d2b8f02c9466ad8cde19905dcb7c3860715e6b20b8b51ad165355431575e1ebf7'})
+StellarBurgerUser: {'email': 'linjoshua@rodriguez.com', 'password': '^Im0IHx)', 'name': 'TestUser'}
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'linjoshua@rodriguez.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc3OWVkMjgwMDAxYjU5NjExOCIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.1B7zQrL49IUoWjfD08fsfWabxpqnhkKH_yG3WstHapQ', 'refreshToken': 'f68edd441f9acf243c0d398b2a966d3d683ab4fd16d489c13d94e0ce4f3c789405f0b807d28d8d31'})
+logout:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+StellarBurgerUser: {'email': 'joy79@barnes.com', 'password': '!^Zo8C+u', 'name': 'TestUser'}
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'joy79@barnes.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc5OWVkMjgwMDAxYjU5NjEzNCIsImlhdCI6MTc0MTc4ODc5MywiZXhwIjoxNzQxNzg5OTkzfQ.1QrJxbHsNgXMmpC15wMF4wNry1lcvfjKJz57g9CD8Es', 'refreshToken': 'ddfc384569e5e1e172b5a362e6c5031503a072f2f02dd6db54252933151407ff55000905ae99b79a'})
+test_get_user_orders:(success=True, status_code=200, data={'success': True, 'orders': [], 'total': 193955, 'totalToday': 563})
+__del__:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+__del__:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

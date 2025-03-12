@@ -1,0 +1,11 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'jeremy94@hotmail.com', 'password': '@@b0PNeW', 'name': 'TestUser'}
+Регистрация пользователя
+registration:(success=True, status_code=200, data={'success': True, 'user': {'email': 'jeremy94@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBlZSIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.GF5V7HDw4s6siJ7TcXR4Z02QtUqnGgDUJ-92l0MsXtQ', 'refreshToken': 'ef106123f774cf412b0d6742ddc1cfdbfdbf3fb6c1a5e698a0eda56d845cc05e11ba0b1c373d4b01'})
+Вход в систему
+login:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBlZSIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.SnbPUtaoWgBenmghym2p5Dk5yWMIwQLPYviXUE-h0To', 'refreshToken': '20272e45377654a4877e2122836855218a8bedd225b5e5dc24c222ca4f9231b3bef9c5b6ece5272f', 'user': {'email': 'jeremy94@hotmail.com', 'name': 'TestUser'}})
+update_info:(success=True, status_code=200, data={'success': True, 'user': {'email': 'joshuahampton@gmail.com', 'name': 'TestUser'}})
+StellarBurgerUser: {'email': 'joshuahampton@gmail.com', 'password': '@@b0PNeW', 'name': 'TestUser'}
+
+Удаление пользователя
+__del__:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

@@ -5,17 +5,21 @@ import inspect
 
 class StellarBurgerApi:
     class HandledResponse:
-        def __init__(self, response: requests.Response, success_code: int):
+        def __init__(self, response: requests.Response, success_code: int, show_response: bool = True):
+            self.response = response
             self.success = response.status_code == success_code
             self.status_code = response.status_code
+            self.text = response.text
+            self.__caller = inspect.currentframe().f_back.f_back.f_code.co_name
             try:
                 self.data = response.json()
             except requests.exceptions.JSONDecodeError:
                 self.data = {}
+                print(f"The server returned the data in an unexpected format ({self.__caller}):")
                 print(response.text)
-            self.text = response.text
-            self.__caller = inspect.currentframe().f_back.f_back.f_code.co_name
-            print(self)
+
+            if show_response:
+                print(self)
 
         def __repr__(self):
             return f"{self.__caller}:(success={self.success}, status_code={self.status_code}, data={self.data})"
@@ -66,10 +70,14 @@ class StellarBurgerApi:
     @classmethod
     def get_available_ingredients(cls) -> HandledResponse:
         response = requests.get(ApiEndpoints.ingredients)
-        return cls.HandledResponse(response, 200)
+        return cls.HandledResponse(response, 200, False)
 
     @classmethod
-    def post_orders(cls, headers: dict, payload: dict):
+    def post_orders(cls, headers: dict, payload: dict) -> HandledResponse:
         response = requests.post(ApiEndpoints.orders, headers=headers, json=payload)
         return cls.HandledResponse(response, 200)
 
+    @classmethod
+    def get_orders(cls, headers: dict) -> HandledResponse:
+        response = requests.get(ApiEndpoints.orders, headers=headers)
+        return cls.HandledResponse(response, 200)

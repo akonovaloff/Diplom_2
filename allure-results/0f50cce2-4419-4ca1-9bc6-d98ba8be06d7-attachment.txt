@@ -1,0 +1,8 @@
+Данные пользователя сгенерированы
+existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'davidyoung@armstrong.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBlYyIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.R-FdUhoelMVmIjxOvY_HNRxb8ECM07M2AFE5Porr2z4', 'refreshToken': '049e12193b1d75450be2f9dcd685e6fe40596d1fa57633e342b390543767088e6ff0e40ad80dccd2'})
+Пользователь зарегистрирован
+login_user:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
+Ok
+new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBlYyIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.qu_MX-s0XB9lbWRQLVjCy0C0MkU6HSRbzhGkHizWUoo', 'refreshToken': 'e6b8721f3971aa2a1705af65e955659ab987a2d419e671cd821449626c1a214ab4ab082e438c90be', 'user': {'email': 'davidyoung@armstrong.com', 'name': 'TestUser'}})
+new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

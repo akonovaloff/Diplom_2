@@ -90,6 +90,10 @@ class StellarBurgerUser:
             self.access_token = response.data['accessToken']
             self.__refresh_token = response.data['refreshToken']
             self.__update_server_info()
+        else:
+            # Сгенерировать новый email и перезапустить регистрацию
+            self.generate_email()
+            self.registration()
         return response
 
     def update_info(self):

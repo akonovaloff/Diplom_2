@@ -1,0 +1,2 @@
+{'email': 'joe27@yahoo.com', 'password': 'q%t^2BlM', 'name': 'TestUser'}
+{'email': 'ubrown@hotmail.com', 'password': '8o$0JRor', 'name': 'TestUser'}
