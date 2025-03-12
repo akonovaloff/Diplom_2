@@ -7,3 +7,4 @@ class ApiEndpoints:
     login = f"{BASE_URL}/api/auth/login"
     logout = f"{BASE_URL}/api/auth/logout"
     ingredients = f"{BASE_URL}/api/ingredients"
+    orders = f"{BASE_URL}/api/orders"

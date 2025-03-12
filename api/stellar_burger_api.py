@@ -8,7 +8,11 @@ class StellarBurgerApi:
         def __init__(self, response: requests.Response, success_code: int):
             self.success = response.status_code == success_code
             self.status_code = response.status_code
-            self.data = response.json()
+            try:
+                self.data = response.json()
+            except requests.exceptions.JSONDecodeError:
+                self.data = {}
+                print(response.text)
             self.text = response.text
             self.__caller = inspect.currentframe().f_back.f_back.f_code.co_name
             print(self)
@@ -62,5 +66,10 @@ class StellarBurgerApi:
     @classmethod
     def get_available_ingredients(cls) -> HandledResponse:
         response = requests.get(ApiEndpoints.ingredients)
+        return cls.HandledResponse(response, 200)
+
+    @classmethod
+    def post_orders(cls, headers: dict, payload: dict):
+        response = requests.post(ApiEndpoints.orders, headers=headers, json=payload)
         return cls.HandledResponse(response, 200)
 

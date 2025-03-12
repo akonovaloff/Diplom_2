@@ -19,7 +19,7 @@ class StellarBurgerUser:
         self.__server_name: str = self.name
         self.__server_password: str = self.password
         self.__is_registered = False
-        self.__access_token: str = ""
+        self.access_token: str = ""
         self.__refresh_token: str = ""
 
         self._payload = self.Payload(self)  # Инициализируем вложенный класс
@@ -27,7 +27,7 @@ class StellarBurgerUser:
 
     def __del__(self):
         if self.__is_registered:
-            response = self.api.delete_user(self.__access_token)
+            response = self.api.delete_user(self.access_token)
 
     def __repr__(self):
         return f"StellarBurgerUser: {self.payload.full}"
@@ -87,13 +87,13 @@ class StellarBurgerUser:
         response = self.api.register_user(self.payload.full)
         if response.success:
             self.__is_registered = True
-            self.__access_token = response.data['accessToken']
+            self.access_token = response.data['accessToken']
             self.__refresh_token = response.data['refreshToken']
             self.__update_server_info()
         return response
 
     def update_info(self):
-        response = self.api.patch_user_info(self.__access_token, self.payload.full)
+        response = self.api.patch_user_info(self.access_token, self.payload.full)
         if response.success:
             self.__update_server_info()
         else:
@@ -123,7 +123,7 @@ class StellarBurgerUser:
         response = self.api.login_user(self.payload.no_name)
         if response.success:
             self.__update_server_info()
-            self.__access_token = response.data['accessToken']
+            self.access_token = response.data['accessToken']
             self.__refresh_token = response.data['refreshToken']
         else:
             self.__restore_server_info()
