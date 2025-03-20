@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'whitakerjoseph@vazquez-cowan.info', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI0OWVkMjgwMDAxYjVhOWUwOCIsImlhdCI6MTc0MjQ4MTE4OCwiZXhwIjoxNzQyNDgyMzg4fQ.eMt7nRTRFIzDxDaxsiPBVwfE3uWFrrs47q4Y5rVYCtQ', 'refreshToken': 'ee7dc5b6dc6015724a31cb334d5bb7588bd1fdcf519116a6269e6ed41aa8b18eaa61bd37848aee0b'})
+Пользователь зарегистрирован
+impl:(success=False, status_code=403, data={'success': False, 'message': 'Email, password and name are required fields'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI0OWVkMjgwMDAxYjVhOWUwOCIsImlhdCI6MTc0MjQ4MTE4OSwiZXhwIjoxNzQyNDgyMzg5fQ.qz2cLDWe--tJyU7kjC5u2Ir2vPy_lb1UPSFhfhviSrI', 'refreshToken': 'e6124b9426b88262dd03bab48e78c2fc6c54d4337d04661f705ce83c60c31e157a77cb81d930eef6', 'user': {'email': 'whitakerjoseph@vazquez-cowan.info', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

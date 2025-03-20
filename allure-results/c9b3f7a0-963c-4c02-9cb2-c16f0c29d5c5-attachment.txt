@@ -1,0 +1,8 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'nicholas44@gonzalez.net', 'password': '!G1TPgGl', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'nicholas44@gonzalez.net', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI1OWVkMjgwMDAxYjVhOWUxYSIsImlhdCI6MTc0MjQ4MTE4OSwiZXhwIjoxNzQyNDgyMzg5fQ.A7BlHUCs_oaZv6tNa7eOez7hJf9f78wFMzqy1S8vgRY', 'refreshToken': 'd3934ca7046fe0d8eec92fcc6240fef2ae4aa1b2b452fd213e8e669262a16a35631b30b9015c0365'})
+Выход из системы
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'nicholas44@gonzalez.net', 'name': 'TestUser'}})
+StellarBurgerUser: {'email': 'nicholas44@gonzalez.net', 'password': '@1Lz&Iz7', 'name': 'TestUser'}

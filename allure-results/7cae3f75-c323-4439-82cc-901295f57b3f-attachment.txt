@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'osanchez@luna-herrera.org', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzJhOWVkMjgwMDAxYjVhOWUyNiIsImlhdCI6MTc0MjQ4MTE5NCwiZXhwIjoxNzQyNDgyMzk0fQ.rPlGV7k-nDNK0_7L0YSvBv2ZNY07BeseltvxYFa6hiA', 'refreshToken': '86dee88061b4bc9275ae818a21abc88d526420dd58e40464c747b46df711969dd0f6094f5b65a1a4'})
+Пользователь зарегистрирован
+impl:(success=False, status_code=403, data={'success': False, 'message': 'Email, password and name are required fields'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzJhOWVkMjgwMDAxYjVhOWUyNiIsImlhdCI6MTc0MjQ4MTE5NSwiZXhwIjoxNzQyNDgyMzk1fQ.0xtHcKFbK91b-qCdvJGbiE4m1uxRkv6KnpxaogqSNqo', 'refreshToken': 'a39da00cca2b23f5f187538d42d7fdb18bdb40e45f46e4b9d2dfb09d30f4b183f29f06026dc8cf56', 'user': {'email': 'osanchez@luna-herrera.org', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

@@ -1,0 +1,10 @@
+StellarBurgerUser: {'email': 'dbrown@shannon.org', 'password': 'BOCg_5Hv', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'dbrown@shannon.org', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlOCIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.tELhsFQ_i_K07Ohbt8gTye7aThN26Rtrg-tCGugI3Us', 'refreshToken': '2e05ab25992a6227f3f30d816cd516e3d156d709f445354d30412d376ec33447ec3cab4edb133873'})
+StellarBurgerUser: {'email': 'williamsderek@smith-hayes.info', 'password': '1_q7UirN', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'williamsderek@smith-hayes.info', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRmYSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.FGPYNH8MFUSE4WHwXgAw_6dXTr6psG534TJc0NTCSLM', 'refreshToken': '55d1bd99daf43198f5f8669f81d1c98fa3b7264813d13917ab109cde56df60a4b5dda008057276d1'})
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+StellarBurgerUser: {'email': 'tracey60@hotmail.com', 'password': '*3^GNisO', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'tracey60@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI0OWVkMjgwMDAxYjVhOWUwYiIsImlhdCI6MTc0MjQ4MTE4OCwiZXhwIjoxNzQyNDgyMzg4fQ._kyRT0ox7Bg00Q1mODhafs5SLfAH9-PUVXynNjMne4Q', 'refreshToken': '5deb34bf356baa17215484e7d91a61a12c68b82221f86df8d3f1ff4ff3450210dfc4ecd9a418d129'})
+pytest_pyfunc_call:(success=True, status_code=400, data={'success': False, 'message': 'Ingredient ids must be provided'})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

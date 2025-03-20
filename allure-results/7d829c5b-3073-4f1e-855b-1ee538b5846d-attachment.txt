@@ -1,0 +1,8 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'amy68@hotmail.com', 'password': '!8XAh$Lq', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'amy68@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlMCIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.WEu7q3L9fCGx6EeYGA8puRdJ9biEHDhYNVC_0aLBZms', 'refreshToken': '9aff600e94373e410d6eec93403d4f2516deef39ae3a661cd41e8e6bca1ed9a2cfdedcf4cbdcd467'})
+Вход в систему
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlMCIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.WEu7q3L9fCGx6EeYGA8puRdJ9biEHDhYNVC_0aLBZms', 'refreshToken': 'f762207b07cbc3c17da9d729088f902d72cac21a668f32e324acd5c7c892e8815ecae7164a1cf607', 'user': {'email': 'amy68@hotmail.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'bridgetcarter@montgomery-franklin.com', 'name': 'Ernest'}})
+StellarBurgerUser: {'email': 'bridgetcarter@montgomery-franklin.com', 'password': '!8XAh$Lq', 'name': 'Ernest'}

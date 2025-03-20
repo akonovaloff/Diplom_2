@@ -1,0 +1,12 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'alvaradoandrea@romero.net', 'password': 'X&@6W2Ce', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'alvaradoandrea@romero.net', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkMiIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.iTJwQQbcCyK3qCRg37Ap8OvjoysDFhn1tJjcIxtL5Kc', 'refreshToken': '63e9dfe80c0914f170da47bb307f07526381c6938b0f63e300618a4f372035e4f3f680123e5cbec0'})
+Вход в систему
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkMiIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.iTJwQQbcCyK3qCRg37Ap8OvjoysDFhn1tJjcIxtL5Kc', 'refreshToken': 'e521a82bc7d8d2e9c9590711eafc43fc0a8443a04d4dad7bcde1e33ea4a6342de0660194f6648cd2', 'user': {'email': 'alvaradoandrea@romero.net', 'name': 'TestUser'}})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'alvaradoandrea@romero.net', 'name': 'TestUser'}})
+StellarBurgerUser: {'email': 'alvaradoandrea@romero.net', 'password': '$8uHtM(n', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkMiIsImlhdCI6MTc0MjQ4MTE4OCwiZXhwIjoxNzQyNDgyMzg4fQ.J1nmFW5D43t9uFXDcHi1pPizUA982mkUY6F-Iq8uXTA', 'refreshToken': '7179aaa5b1dd8595262e01d48d1b7a583eefb677556644085326b04b726d3e0190d147220bc19a16', 'user': {'email': 'alvaradoandrea@romero.net', 'name': 'TestUser'}})
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+impl:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})

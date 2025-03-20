@@ -1,0 +1,4 @@
+Данные пользователя сгенерированы
+impl:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
+impl:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
+Пользователь отсутствует в базе

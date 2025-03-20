@@ -1,0 +1,8 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'moralesmelissa@gmail.com', 'password': 'Zf)3hUc3', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'moralesmelissa@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkYSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.mZgiscC1SIjkP3DJuXIHCHbayiCEY3_aGrC8zL4pyB0', 'refreshToken': 'f5540bbf625a87d9861e85d7f408aeed9be3cf9d3caae9f77a7093061b10bbb7b04b03514caee652'})
+Вход в систему
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkYSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.mZgiscC1SIjkP3DJuXIHCHbayiCEY3_aGrC8zL4pyB0', 'refreshToken': 'f05733a1ea3582b40d604f0ba93ec9ec37cb9a9faa3659a3af69e5c4195b94228fd67f69615a2cbf', 'user': {'email': 'moralesmelissa@gmail.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'moralesmelissa@gmail.com', 'name': 'Alyssa'}})
+StellarBurgerUser: {'email': 'moralesmelissa@gmail.com', 'password': 'Zf)3hUc3', 'name': 'Alyssa'}

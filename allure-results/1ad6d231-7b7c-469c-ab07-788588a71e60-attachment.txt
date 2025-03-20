@@ -1,0 +1,10 @@
+StellarBurgerUser: {'email': 'fosterjoshua@hotmail.com', 'password': '!45FL(Le', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'fosterjoshua@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkMCIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.RyOysozZrH5MdG4hLK6migVb3FNe-2huIemDTVvhdbc', 'refreshToken': '5920225a6fe843d91ae4ce176039725116f0e71ae28af9cb5c65edb2a12b4974bd303005b889f1f1'})
+StellarBurgerUser: {'email': 'alec23@hotmail.com', 'password': 'Kk@^4Bq8', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'alec23@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlZiIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.kJswVwCgiKn3zcuAmkfeT_FABeFLv8_ejYvLdTREFwQ', 'refreshToken': '6ada4644ce7d71b91761f7b3547fde00b850ddea6e4e68182be0caaaaa99dd85987ad1f27ea72a07'})
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+StellarBurgerUser: {'email': 'antonio74@smith.com', 'password': '(DI9HeNj', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'antonio74@smith.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI0OWVkMjgwMDAxYjVhOWUwNiIsImlhdCI6MTc0MjQ4MTE4OCwiZXhwIjoxNzQyNDgyMzg4fQ.raLBtpxshHxyZFMhsT3-SygjXc8HY1yot6xL3E_yOS8', 'refreshToken': '0df997ba75e39a45c3c08214266d22243a421662147afc1c3d55360b49ae56a5cdbfbb5c62212194'})
+pytest_pyfunc_call:(success=True, status_code=500, data={})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

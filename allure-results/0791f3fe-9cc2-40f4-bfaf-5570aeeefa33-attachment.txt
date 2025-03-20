@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'tammybernard@williams.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzJlOWVkMjgwMDAxYjVhOWUyYyIsImlhdCI6MTc0MjQ4MTE5OCwiZXhwIjoxNzQyNDgyMzk4fQ.QpEq6SvtShv8mvCG7Z6mpPOVxlliDIwXomkfHmTsP_c', 'refreshToken': '5bbbb24ade63fbb012ddf047f8f2e394b890f947fe83803d4868b28d869212b071dee8eabae53289'})
+Пользователь зарегистрирован
+impl:(success=False, status_code=403, data={'success': False, 'message': 'Email, password and name are required fields'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzJlOWVkMjgwMDAxYjVhOWUyYyIsImlhdCI6MTc0MjQ4MTE5OSwiZXhwIjoxNzQyNDgyMzk5fQ.Au2DNVFb9EtuON62htrDtz7_ocbueSxwYtO1A76je7k', 'refreshToken': 'f6acf1a2a773cb63ad5b9761f20c40b1c5d30f1bf3e61995582ccfafa79e19f58f56be860b4449c4', 'user': {'email': 'tammybernard@williams.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

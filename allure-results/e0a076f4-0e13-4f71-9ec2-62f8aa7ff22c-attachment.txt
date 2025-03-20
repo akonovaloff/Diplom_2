@@ -1,0 +1,8 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'alicia53@hotmail.com', 'password': '*n2CBSce', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'alicia53@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlMSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.j49AwiYtb0PP2VbvxjzAXzvjRPWU8M4ACvENqsezSC0', 'refreshToken': 'cf1da27d37d167efba239b4978d8ea1b4bb2c9164af782da341949abb343a65c39b4dd2f38ea351e'})
+Выход из системы
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'krystalharper@gmail.com', 'name': 'TestUser'}})
+StellarBurgerUser: {'email': 'krystalharper@gmail.com', 'password': '*n2CBSce', 'name': 'TestUser'}

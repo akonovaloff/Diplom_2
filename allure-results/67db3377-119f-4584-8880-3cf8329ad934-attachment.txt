@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'kcraig@yahoo.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzJiOWVkMjgwMDAxYjVhOWUyOCIsImlhdCI6MTc0MjQ4MTE5NSwiZXhwIjoxNzQyNDgyMzk1fQ.O0rlTSuYXeWX4my-0a1nE9-bR_8Kb93N_lCx8MIhNTE', 'refreshToken': '94149a0dc8b4b901eac856f8697ea1375e0fa7cf1f525f827b85a80a9a9a8211d390c4e026e507bf'})
+Пользователь зарегистрирован
+impl:(success=False, status_code=403, data={'success': False, 'message': 'User already exists'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzJiOWVkMjgwMDAxYjVhOWUyOCIsImlhdCI6MTc0MjQ4MTE5NiwiZXhwIjoxNzQyNDgyMzk2fQ.7-qPOi4bEIYMM9Q4ht5OiPapHTryemffzNW6LFO7OT0', 'refreshToken': '052da47f510493f896e79cf0383fa317e3e9f6024907eec01c15a0ea15039aac8c7d385f32f46a9b', 'user': {'email': 'kcraig@yahoo.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён
