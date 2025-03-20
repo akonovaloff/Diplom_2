@@ -37,8 +37,8 @@ class TestOrders:
             user_with_orders = StellarBurgerUser()
             user_with_orders.registration()
             requests.post(url=ApiEndpoints.orders,
-                                     headers={"Authorization": user_with_orders.access_token},
-                                     json={"ingredients": [ingredient["_id"] for ingredient in ingredients_id_list]})
+                          headers={"Authorization": user_with_orders.access_token},
+                          json={"ingredients": [ingredient["_id"] for ingredient in ingredients_id_list]})
             self.user_with_orders = {"Authorization": user_with_orders.access_token}
 
     @pytest.mark.parametrize("headers_attr, payload_attr, expected_code", [
@@ -47,6 +47,7 @@ class TestOrders:
         ("authorized_header", "empty_payload", 400),  # Валидный токен + пустой payload
         ("unauthorized_header", "valid_ingredients_payload", 401),  # Невалидный токен + валидные ингредиенты
     ])
+    @allure.title("Создание заказа")
     def test_create_order(self, headers_attr, payload_attr, expected_code):
         """
         Параметризованный тест для создания заказа.
@@ -74,6 +75,7 @@ class TestOrders:
         ("unauthorized_header", 200, 0),  # Невалидный токен
         ("user_with_orders", 200, 1)
     ])
+    @allure.title("Получение заказов пользователя")
     def test_get_user_orders(self, headers_attr, expected_code, expected_orders_len):
         """
         Параметризованный тест для проверки созданных заказов пользователя.
@@ -87,7 +89,8 @@ class TestOrders:
         assert response.status_code == expected_code, (
             f"Ожидался код {expected_code}, но получен {response.status_code}")
         # Проверяем, что число заказов соответствует ожидаемому
-        assert len(response.data['orders']) == expected_orders_len, "Ответ сервера должен содержать ожидаемое число заказов"
+        assert len(
+            response.data['orders']) == expected_orders_len, "Ответ сервера должен содержать ожидаемое число заказов"
 
         # Если массив заказов не пустой, то проверяем наличие обязательных полей
         if expected_orders_len != 0:

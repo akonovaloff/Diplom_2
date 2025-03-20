@@ -1,10 +1,11 @@
 import pytest
-
+import allure
 from conftest import new_stellar_burger_user, login_stellar_burger_user
 
 
 class TestUserInfo:
     @pytest.mark.parametrize("fields", [["email"], ["name"], ["email", "name"]])
+    @allure.title("Изменение данных пользователя")
     def test_patch_user_info_name_or_email(self, login_stellar_burger_user, fields):
         """Тест проверяет возможность изменить email и name для залогиненного пользователя"""
 
@@ -21,6 +22,7 @@ class TestUserInfo:
         for field in fields:
             assert response.data['user'][field] != old[field], f"Значение аттрибута {field} должно успешно измениться"
 
+    @allure.title("Изменение пароля")
     def test_patch_user_password(self, login_stellar_burger_user):
         """Тест проверяет возможность изменить password для залогиненного пользователя.
         Поскольку сервер не возвращает пароль пользователя в явном виде, то проверка осуществляется
@@ -43,6 +45,7 @@ class TestUserInfo:
         assert response.success == False, "Авторизация по старому паролю должна стать невозможной"
 
     @pytest.mark.parametrize("field", ["email", "name", "password"])
+    @allure.title("Изменение данных, когда пользователь разлогинился")
     def test_patch_user_info_when_user_is_logout(self, field, logout_stellar_burger_user):
         """Тест проверяет, что невозможно изменить данные пользователя, если пользователь разлогинился,
         но в запросе передан старый токен авторизации"""
