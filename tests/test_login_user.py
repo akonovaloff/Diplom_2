@@ -14,7 +14,6 @@ class TestLoginUser:
         assert expected_message in response.text, (
             f"\nТекст ответа сервера не содержит ожидаемую часть '{expected_message}'"
             f"\nОтвет сервера: {response.text}")
-        print("Ok")
 
     @allure.title("Вход не зарегистрированного пользователя")
     def test_login_user_new_user(self, new_user):
