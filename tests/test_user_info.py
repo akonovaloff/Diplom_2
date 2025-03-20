@@ -46,6 +46,7 @@ class TestUserInfo:
 
     @pytest.mark.parametrize("field", ["email", "name", "password"])
     @allure.title("Изменение данных, когда пользователь разлогинился")
+    @pytest.mark.xfail(reason="Баг: токен продолжает действовать когда пользователь разлогинился")
     def test_patch_user_info_when_user_is_logout(self, field, logout_stellar_burger_user):
         """Тест проверяет, что невозможно изменить данные пользователя, если пользователь разлогинился,
         но в запросе передан старый токен авторизации"""

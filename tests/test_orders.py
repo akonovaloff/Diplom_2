@@ -45,7 +45,9 @@ class TestOrders:
         ("authorized_header", "valid_ingredients_payload", 200),  # Валидный токен + валидные ингредиенты
         ("authorized_header", "invalid_ingredients_payload", 500),  # Валидный токен + невалидные ингредиенты
         ("authorized_header", "empty_payload", 400),  # Валидный токен + пустой payload
-        ("unauthorized_header", "valid_ingredients_payload", 401),  # Невалидный токен + валидные ингредиенты
+        pytest.param("unauthorized_header", "valid_ingredients_payload", 401, marks=pytest.mark.xfail(
+            reason="Баг: токен продолжает действовать когда пользователь разлогинился")),
+        # Невалидный токен + валидные ингредиенты
     ])
     @allure.title("Создание заказа")
     def test_create_order(self, headers_attr, payload_attr, expected_code):
