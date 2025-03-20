@@ -11,15 +11,12 @@ def new_user():
     """Генерация случайных данных пользователя"""
 
     user = {"email": fake.ascii_email(), "password": fake.password(8), "name": "TestUser"}
-    print("Данные пользователя сгенерированы")
     yield user
 
     response = StellarBurgerApi.login_user(user)
     if response.success:
         _ = StellarBurgerApi.delete_user(response.data["accessToken"])
-        print("Пользователь удалён")
-    else:
-        print("Пользователь отсутствует в базе")
+
 
 
 @pytest.fixture
@@ -28,8 +25,6 @@ def existing_user(new_user):
 
     user = new_user
     response = StellarBurgerApi.register_user(user)
-    assert response.success, "\nUser must be successfully registered "
-    print("Пользователь зарегистрирован")
     return user
 
 
