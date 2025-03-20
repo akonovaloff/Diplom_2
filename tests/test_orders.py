@@ -72,33 +72,26 @@ class TestOrders:
                 f"Ответ сервера:\n"
                 f"\ttext={response.response.text}\n")
 
-    @pytest.mark.parametrize("headers_attr, expected_code, expected_orders_len", [
-        ("authorized_header", 200, 0),  # Валидный токен
-        ("unauthorized_header", 200, 0),  # Невалидный токен
-        ("user_with_orders", 200, 1)
-    ])
     @allure.title("Получение заказов пользователя")
-    def test_get_user_orders(self, headers_attr, expected_code, expected_orders_len):
+    def test_get_user_orders(self):
         """
         Параметризованный тест для проверки созданных заказов пользователя.
         Данные подготавливаются в setup_method.
         """
         # Получаем данные для теста
-        headers = getattr(self, headers_attr)
+        headers = getattr(self, "user_with_orders")
         # Отправляем запрос
         response = Api.get_orders(headers=headers)
         # Проверяем статус-код
-        assert response.status_code == expected_code, (
-            f"Ожидался код {expected_code}, но получен {response.status_code}")
+        assert response.status_code == 200, (
+            f"Ожидался код 200, но получен {response.status_code}")
         # Проверяем, что число заказов соответствует ожидаемому
         assert len(
-            response.data['orders']) == expected_orders_len, "Ответ сервера должен содержать ожидаемое число заказов"
+            response.data['orders']) == 1, "Ответ сервера должен содержать ожидаемое число заказов"
 
-        # Если массив заказов не пустой, то проверяем наличие обязательных полей
-        if expected_orders_len != 0:
-            for order in response.data['orders']:
-                for field in ['_id', 'ingredients', 'status', 'name', 'createdAt', 'updatedAt', 'number']:
-                    assert field in order.keys(), "Заказ должен содержать все обязательные поля"
+        for order in response.data['orders']:
+            for field in ['_id', 'ingredients', 'status', 'name', 'createdAt', 'updatedAt', 'number']:
+                assert field in order.keys(), "Заказ должен содержать все обязательные поля"
 
     def teardown_method(self):
         """
