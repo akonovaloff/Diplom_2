@@ -1,6 +1,0 @@
-Данные пользователя сгенерированы
-existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'brian88@hotmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBmNCIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.izAAfjXzEjfMl0p7334Y39DiO3aezBwpBMGVsnThIqk', 'refreshToken': 'e3073e99e4d0123b36d44eabdf67092381212edb201583e2119fe7068558d7fdd68546f8654dc89e'})
-Пользователь зарегистрирован
-new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBmNCIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.4Lapp_3eMGM_G1H-HzHXrJxktw5IXFtA5MttFCxWiwY', 'refreshToken': 'ff42e4ed00b9a71ca9dac1e0b5f4c98c13be0e30b06f107b6a20ceb9a90caa8dda9ebc77c925b2b2', 'user': {'email': 'brian88@hotmail.com', 'name': 'TestUser'}})
-new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
-Пользователь удалён

@@ -20,7 +20,7 @@ class TestUserRegistration:
             f"\nТекст ответа сервера не содержит ожидаемую часть '{expected_message}'"
             f"\nОтвет сервера: {response.text}")
 
-    @allure.title("Вход нового пользователя")
+    @allure.title("Регистрация нового пользователя")
     def test_new_user_registration_new_user(self, new_user):
         self.user_registration(new_user, 200, '"success":true')
 

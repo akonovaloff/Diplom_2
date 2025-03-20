@@ -1,0 +1,10 @@
+StellarBurgerUser: {'email': 'gking@gmail.com', 'password': '(NM37fJh', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'gking@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlNCIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.C-C8i77dgi8ThldNZhb8lXOYD2PHMXpoHHjYSCOACYU', 'refreshToken': '2abfef935e3e543859cd932af442d65ee32d33e72cccd1a1bb184c0d6747fbbbae728458625d4420'})
+StellarBurgerUser: {'email': 'qnguyen@boone.info', 'password': '*w4w#L)c', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'qnguyen@boone.info', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRmNSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.W91Pj2WUSvP_sIGv6gBobuyHzz1BH5qT_y6P2Kkdw_E', 'refreshToken': '7f2d192967ad172971705cfb4f28590f7fbc41e92416ae3aaa12092faf0013319e6c98504338ef6e'})
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+StellarBurgerUser: {'email': 'krista13@kim-thomas.com', 'password': '(@0()Ky6', 'name': 'TestUser'}
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'krista13@kim-thomas.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI1OWVkMjgwMDAxYjVhOWUxOCIsImlhdCI6MTc0MjQ4MTE4OSwiZXhwIjoxNzQyNDgyMzg5fQ.AARNaq37H9xpCf33B4r8qnDRkZas-_qp-VLfxXYww5k', 'refreshToken': 'a8f486261710f2cb0bffc7d15db27e840b3ee3c52d32e58c8c12da80c2b26c131c1aab7f9015a78f'})
+impl:(success=True, status_code=200, data={'success': True, 'orders': [], 'total': 204737, 'totalToday': 532})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})

@@ -1,0 +1,8 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'crystalmoore@gmail.com', 'password': '#9GsCmzE', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'crystalmoore@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRmZiIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.NY-BHdlvhABjM8IZEH6boFDVRUaZpP8LgXrHNqkPl28', 'refreshToken': '22f793bea0ab53e7ca3219a6dc6ef5d3129a8b6266e17bde48ffff75064c5fac56f5397ee19b89c6'})
+Выход из системы
+impl:(success=True, status_code=200, data={'success': True, 'message': 'Successful logout'})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'crystalmoore@gmail.com', 'name': 'Emily'}})
+StellarBurgerUser: {'email': 'crystalmoore@gmail.com', 'password': '#9GsCmzE', 'name': 'Emily'}

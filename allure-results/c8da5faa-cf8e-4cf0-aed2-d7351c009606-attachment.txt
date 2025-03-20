@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'lauren20@perez.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlOSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.u5XJZIvfxEmFS5UNnLEarm3mn0T3Njvnv8O9tIyShwI', 'refreshToken': 'e88d55ab2b51fdd0c2ea234d5a41a456433360511bd8a9535f04931056414cddef955f22ac5d9b16'})
+Пользователь зарегистрирован
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlOSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.u5XJZIvfxEmFS5UNnLEarm3mn0T3Njvnv8O9tIyShwI', 'refreshToken': 'd7a9b0dd1e699888f143e57cc4a2e6034a9d0514cdc9db2cca1e3cbd2893a08822a21bce839ada0b', 'user': {'email': 'lauren20@perez.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRlOSIsImlhdCI6MTc0MjQ4MTE4NywiZXhwIjoxNzQyNDgyMzg3fQ.lsfaJagMGxDuz4Qa9TY98NW2A0iTsNP2Ae79dBHNWX8', 'refreshToken': '3c76710a85fd7acf04935dbf262743bdb33a06475a5c29fe9d63ba8682393bc3506cb895ad1911d4', 'user': {'email': 'lauren20@perez.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

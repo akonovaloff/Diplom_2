@@ -1,0 +1,5 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'jonestimothy@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI0OWVkMjgwMDAxYjVhOWUxNCIsImlhdCI6MTc0MjQ4MTE4OCwiZXhwIjoxNzQyNDgyMzg4fQ.xMln25duuV71dWyMjrjmC41lLAswJrYInK2TBrCAvPI', 'refreshToken': 'f5e898649e22d5392cbdda1eb28f6321548f61e1c15a7c464e66b7d9f3c36acdc2ecdd7480551bbe'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzI0OWVkMjgwMDAxYjVhOWUxNCIsImlhdCI6MTc0MjQ4MTE4OSwiZXhwIjoxNzQyNDgyMzg5fQ.Gxy7NmIChaQWu4XRa0GyrQIBmCpvFzqMKAYDdD48lOw', 'refreshToken': '69e17b02bad671c4184826b7382239a15726550bb43c6b7f267fcc7ff601e325de0abe6e9b24145b', 'user': {'email': 'jonestimothy@gmail.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'sanfordbrian@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkNiIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.QVroGlDdVnaXOsEMHVDrnuiuwLoxYuyx9aLJ6_HC68s', 'refreshToken': '5d0e385061d935032f37d1b16bddb5467cdbf174591bc8357ddda20fbbc770c8df2f8af72634059c'})
+Пользователь зарегистрирован
+impl:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkNiIsImlhdCI6MTc0MjQ4MTE4NywiZXhwIjoxNzQyNDgyMzg3fQ.Y5RPM3Xo3DdfRoYXRAwhqsVXMgZy1wCHU5U3RTcu5Kk', 'refreshToken': 'd6437ebb1e45fd51706974b63e2b7d0a45fabe492de86c22f6f18ff9398746b64498c5830321aa5e', 'user': {'email': 'sanfordbrian@gmail.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

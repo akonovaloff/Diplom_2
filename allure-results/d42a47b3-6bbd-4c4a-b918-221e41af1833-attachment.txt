@@ -1,0 +1,8 @@
+Создание пользователя
+StellarBurgerUser: {'email': 'haleyrobert@gmail.com', 'password': 'o*0AGzGO', 'name': 'TestUser'}
+Регистрация пользователя
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'haleyrobert@gmail.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkMyIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.dolmSQVWbrhis_Z2XdQr39laqBDRdPJVchSIGb-336o', 'refreshToken': '45ae165b35cf7c0b8ce446ed68402e251d39469206852cb1e69f73f0c0c4c03ed610e0ef09d48062'})
+Вход в систему
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkMyIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.dolmSQVWbrhis_Z2XdQr39laqBDRdPJVchSIGb-336o', 'refreshToken': '7bbe5483161abfe8ff27d762037e74f21a60cbf47ca2f90c0b5872d756e475c25e307d3fcb9d2c9e', 'user': {'email': 'haleyrobert@gmail.com', 'name': 'TestUser'}})
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'linda52@hotmail.com', 'name': 'TestUser'}})
+StellarBurgerUser: {'email': 'linda52@hotmail.com', 'password': 'o*0AGzGO', 'name': 'TestUser'}

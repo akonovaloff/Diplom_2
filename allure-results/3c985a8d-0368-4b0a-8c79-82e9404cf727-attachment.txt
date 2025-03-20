@@ -1,5 +1,0 @@
-Данные пользователя сгенерированы
-login_user:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
-Ok
-new_user:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
-Пользователь отсутствует в базе

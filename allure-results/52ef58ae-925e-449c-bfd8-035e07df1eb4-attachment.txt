@@ -1,7 +1,0 @@
-Данные пользователя сгенерированы
-existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'jgalvan@allen-smith.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5NjgyOWVkMjgwMDAxYjU5NjE0ZSIsImlhdCI6MTc0MTc4ODgwMiwiZXhwIjoxNzQxNzkwMDAyfQ.6uuMLMKezb9Ah4rmq1R3rUiNT2PH4crD3LdZRazpWzc', 'refreshToken': 'a32ccc4dea590436d12f0069a1540cb6ab9a0648a292718857fe9fddaea1a95573610a4b6ec3208b'})
-Пользователь зарегистрирован
-user_registration:(success=False, status_code=403, data={'success': False, 'message': 'Email, password and name are required fields'})
-new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5NjgyOWVkMjgwMDAxYjU5NjE0ZSIsImlhdCI6MTc0MTc4ODgwMywiZXhwIjoxNzQxNzkwMDAzfQ.zPq2u6ObhKxKchElqTRk3USghyxhcXOnWwQjWnFINRQ', 'refreshToken': '58574c235fd3a5340ba8946fcc5d94410d3f3a1beeeb79100edb15c80fbd127e3d06b04a6e0983d4', 'user': {'email': 'jgalvan@allen-smith.com', 'name': 'TestUser'}})
-new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
-Пользователь удалён

@@ -1,7 +1,0 @@
-Данные пользователя сгенерированы
-existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'fscott@yahoo.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5NjdmOWVkMjgwMDAxYjU5NjE0OCIsImlhdCI6MTc0MTc4ODc5OSwiZXhwIjoxNzQxNzg5OTk5fQ.W-Kqd9D4DaZh5moXx500Bo86a6i1uSELh7rAi8Xaryc', 'refreshToken': '39824938545ead5fbe240d98a31b5b3413434fd9fff87f14c4022ba2aa690e98553be7fbc16cbb02'})
-Пользователь зарегистрирован
-user_registration:(success=False, status_code=403, data={'success': False, 'message': 'User already exists'})
-new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5NjdmOWVkMjgwMDAxYjU5NjE0OCIsImlhdCI6MTc0MTc4ODgwMCwiZXhwIjoxNzQxNzkwMDAwfQ.EIOlWZDzYJOPwxbwdNVEf5WqCUvkyjzYdWtQwh6NtE4', 'refreshToken': '1c21c97685c225a6d6ef01569ad28e8d17fb475f02c5f9d8e740922a7deaeb3ec5947c8534ea0da9', 'user': {'email': 'fscott@yahoo.com', 'name': 'TestUser'}})
-new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
-Пользователь удалён

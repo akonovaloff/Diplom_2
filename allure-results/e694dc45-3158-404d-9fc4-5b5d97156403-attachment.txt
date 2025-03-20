@@ -1,0 +1,7 @@
+Данные пользователя сгенерированы
+impl:(success=True, status_code=200, data={'success': True, 'user': {'email': 'cassidybryan@gilbert.org', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkZSIsImlhdCI6MTc0MjQ4MTE4NiwiZXhwIjoxNzQyNDgyMzg2fQ.mhlP15bd5BYZ8S2-ws1vAMy1Jw7XoEUQGwWTYtPUxjM', 'refreshToken': '493b2a3f9d68eb9b5788d47bbf80c40cfe87097a56f5e698e2f7b28276d661c46fa82577e318f386'})
+Пользователь зарегистрирован
+impl:(success=False, status_code=401, data={'success': False, 'message': 'email or password are incorrect'})
+impl:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGMyNzIyOWVkMjgwMDAxYjVhOWRkZSIsImlhdCI6MTc0MjQ4MTE4NywiZXhwIjoxNzQyNDgyMzg3fQ.rXfHpfzi1-SO3i_I725LxseFbTkYSxwiFbHbFRXwf7s', 'refreshToken': 'ebcbe9db17a9a798c55df35c4799f3d4efa59599091041c084689a0ceb883b75b9a622f1dfe16a24', 'user': {'email': 'cassidybryan@gilbert.org', 'name': 'TestUser'}})
+impl:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
+Пользователь удалён

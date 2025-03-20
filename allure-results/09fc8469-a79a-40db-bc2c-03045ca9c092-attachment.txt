@@ -1,8 +1,0 @@
-Данные пользователя сгенерированы
-existing_user:(success=True, status_code=200, data={'success': True, 'user': {'email': 'kmartinez@stewart.com', 'name': 'TestUser'}, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBmYSIsImlhdCI6MTc0MTc4ODc5MCwiZXhwIjoxNzQxNzg5OTkwfQ.ElftlURFZOnKJpQ6X2LuSWjcuetBPWus306BVcHPcJI', 'refreshToken': '501c6de99583e8d53a32770b4523d5fb190915078b887cdabecbb747f3fad2362f9967a4b76ee4c9'})
-Пользователь зарегистрирован
-login_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBmYSIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.iCwRh8bzinuaDghk4xD-ECkY2n_AYmxxJbcwCK_cuVE', 'refreshToken': '1237a7a7e2abdc0c464c8fab0d7d2c8e0c627c2f98ecc2f0a9faf4571b305553058cd2f6795e6ba6', 'user': {'email': 'kmartinez@stewart.com', 'name': 'TestUser'}})
-Ok
-new_user:(success=True, status_code=200, data={'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDE5Njc2OWVkMjgwMDAxYjU5NjBmYSIsImlhdCI6MTc0MTc4ODc5MSwiZXhwIjoxNzQxNzg5OTkxfQ.iCwRh8bzinuaDghk4xD-ECkY2n_AYmxxJbcwCK_cuVE', 'refreshToken': '543ed242184ed26e39db7667980943e4f854a3ce2349c3d1c870471137b484980433bd903eadf01d', 'user': {'email': 'kmartinez@stewart.com', 'name': 'TestUser'}})
-new_user:(success=True, status_code=202, data={'success': True, 'message': 'User successfully removed'})
-Пользователь удалён
