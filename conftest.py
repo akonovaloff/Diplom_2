@@ -57,10 +57,8 @@ def new_stellar_burger_user():
     user = StellarBurgerUser()
     print("Регистрация пользователя")
     user.registration()
-    yield user
+    return user
 
-    print("\nУдаление пользователя")
-    user.__del__()
 
 @pytest.fixture()
 def logout_stellar_burger_user(new_stellar_burger_user):
