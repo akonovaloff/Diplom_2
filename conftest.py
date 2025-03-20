@@ -39,17 +39,12 @@ def not_valid_pass_user(existing_user):
     user["password"] = fake.password()
     return user
 
+
 @pytest.fixture
 def no_password_user(existing_user):
     user = {key: value for key, value in existing_user.items() if key != "password"}
     return user
 
-@pytest.fixture
-def generate_new_user():
-    def new_user_data():
-        return {"email": fake.ascii_email(), "password": fake.password(8), "name": "TestUser"}
-
-    return new_user_data
 
 @pytest.fixture()
 def new_stellar_burger_user():
@@ -66,11 +61,13 @@ def logout_stellar_burger_user(new_stellar_burger_user):
     new_stellar_burger_user.logout()
     return new_stellar_burger_user
 
+
 @pytest.fixture()
 def login_stellar_burger_user(new_stellar_burger_user):
     print("Вход в систему")
     new_stellar_burger_user.login()
     return new_stellar_burger_user
+
 
 @pytest.fixture(scope="session")
 def ingredients():
