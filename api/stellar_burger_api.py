@@ -15,8 +15,6 @@ class StellarBurgerApi:
                 self.data = response.json()
             except requests.exceptions.JSONDecodeError:
                 self.data = {}
-                print(f"The server returned the data in an unexpected format ({self.__caller}):")
-                print(response.text)
 
             if show_response:
                 print(self)
