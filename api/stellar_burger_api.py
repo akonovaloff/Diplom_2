@@ -1,3 +1,4 @@
+import allure
 import requests
 from utils.config import ApiEndpoints
 import inspect
@@ -22,7 +23,9 @@ class StellarBurgerApi:
         def __repr__(self):
             return f"{self.__caller}:(success={self.success}, status_code={self.status_code}, data={self.data})"
 
+
     @classmethod
+    @allure.step("Регистрация пользователя")
     def register_user(cls, payload: dict) -> HandledResponse:
         """Отправляет POST-запрос на регистрацию пользователя"""
 
@@ -31,6 +34,7 @@ class StellarBurgerApi:
         return cls.HandledResponse(response, 200)
 
     @classmethod
+    @allure.step("Удаление пользователя")
     def delete_user(cls, access_token: str) -> HandledResponse:
         """Отправляет DELETE-запрос на удаление пользователя по его accessToken"""
 
@@ -40,6 +44,7 @@ class StellarBurgerApi:
         return cls.HandledResponse(response, 202)
 
     @classmethod
+    @allure.step("Вход пользователя в систему")
     def login_user(cls, payload: dict) -> HandledResponse:
         """Отправляет POST-запрос, чтобы залогинить пользователя в системе"""
 
@@ -48,34 +53,40 @@ class StellarBurgerApi:
         return cls.HandledResponse(response, 200)
 
     @classmethod
+    @allure.step("Выход пользователя из системы")
     def logout_user(cls, refresh_token: str) -> HandledResponse:
         payload = {"token": refresh_token}
         response = requests.post(ApiEndpoints.logout, json=payload)
         return cls.HandledResponse(response, 200)
 
     @classmethod
+    @allure.step("Получение информации пользователя")
     def get_user_info(cls, access_token: str):
         headers = {"Authorization": access_token}
         response = requests.get(ApiEndpoints.user, headers=headers)
         return cls.HandledResponse(response, 200)
 
     @classmethod
+    @allure.step("Изменение данных пользователя")
     def patch_user_info(cls, access_token: str, payload: dict) -> HandledResponse:
         headers = {"Authorization": access_token}
         response = requests.patch(ApiEndpoints.user, headers=headers, json=payload)
         return cls.HandledResponse(response, 200)
 
     @classmethod
+    @allure.step("Получение списка доступных ингредиентов")
     def get_available_ingredients(cls) -> HandledResponse:
         response = requests.get(ApiEndpoints.ingredients)
         return cls.HandledResponse(response, 200, False)
 
     @classmethod
+    @allure.step("Создание заказа")
     def post_orders(cls, headers: dict, payload: dict) -> HandledResponse:
         response = requests.post(ApiEndpoints.orders, headers=headers, json=payload)
         return cls.HandledResponse(response, 200)
 
     @classmethod
+    @allure.step("Получение заказов")
     def get_orders(cls, headers: dict) -> HandledResponse:
         response = requests.get(ApiEndpoints.orders, headers=headers)
         return cls.HandledResponse(response, 200)
